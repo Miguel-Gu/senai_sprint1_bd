@@ -21,6 +21,6 @@ INSERT INTO VEICULO (idEmpresa, idModelo, placa)
 VALUES (1, 1, '111'),(2, 2, '222');
 GO
 
-INSERT INTO ALUGUEL (idVeiculo, idcliente, dataDevolucao)
-VALUES (3, 1, '12-08-2021'),(4, 2, '19-08-2021')
+INSERT INTO ALUGUEL (idVeiculo, idcliente, dataRetirada, dataDevolucao)
+VALUES (1, 1, '12-07-2021', '19-07-2021'),(2, 2, '26-07-2021', '02-08-2021')
 GO
