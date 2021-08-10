@@ -8,3 +8,22 @@ SELECT * FROM MODELO;
 SELECT * FROM VEICULO;
 SELECT * FROM ALUGUEL;
 
+
+
+SELECT dataRetirada, dataDevolucao, CLIENTE.nomeCliente, MODELO.nomeModelo FROM ALUGUEL
+LEFT JOIN CLIENTE
+ON ALUGUEL.idcliente = CLIENTE.idcliente
+LEFT JOIN VEICULO
+ON ALUGUEL.idVeiculo = VEICULO.idVeiculo
+LEFT JOIN MODELO
+ON VEICULO.idModelo = MODELO.idModelo;
+
+
+                    
+SELECT nomeCliente, dataRetirada, dataDevolucao, MODELO.nomeModelo FROM CLIENTE
+LEFT JOIN ALUGUEL
+ON CLIENTE.idcliente = ALUGUEL.idcliente
+LEFT JOIN VEICULO
+ON ALUGUEL.idVeiculo = VEICULO.idVeiculo
+LEFT JOIN MODELO
+ON VEICULO.idModelo = MODELO.idModelo;
