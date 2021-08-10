@@ -25,7 +25,7 @@ SELECT * FROM TIPOPET
 WHERE nomeTipoPET LIKE '%o';
 
 
-SELECT idPet, PETS.nome, dataNascimento, idTipoPet, DONO.nome AS nomeDono FROM PETS
+SELECT idPet, PETS.nome, dataNascimento AS [Data Nascimento], DONO.nome AS [Nome Dono] FROM PETS
 LEFT JOIN DONO
 ON PETS.idDono = DONO.idDono;
 

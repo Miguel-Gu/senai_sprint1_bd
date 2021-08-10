@@ -13,7 +13,7 @@ INSERT INTO DONO (nome)
 VALUES ('Andre'), ('Shirley');
 GO 
 
-INSERT INTO PETS (idDono, nome, dataNascimento, idTipoPet)
+INSERT INTO PETS (idDono, nome, dataNascimento, idRaca)
 VALUES ('1', 'she-ra', '06-07-2011', 2), ('2', 'thor', '22-09-2014', 1);
 GO 
 
