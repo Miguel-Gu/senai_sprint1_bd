@@ -12,7 +12,7 @@ SELECT * FROM ALUGUEL;
 
 SELECT dataRetirada, dataDevolucao, CLIENTE.nomeCliente, MODELO.nomeModelo FROM ALUGUEL
 LEFT JOIN CLIENTE
-ON ALUGUEL.idcliente = CLIENTE.idcliente
+ON ALUGUEL.idcliente = CLIENTE.idCliente
 LEFT JOIN VEICULO
 ON ALUGUEL.idVeiculo = VEICULO.idVeiculo
 LEFT JOIN MODELO
@@ -22,7 +22,7 @@ ON VEICULO.idModelo = MODELO.idModelo;
                     
 SELECT nomeCliente, dataRetirada, dataDevolucao, MODELO.nomeModelo FROM CLIENTE
 LEFT JOIN ALUGUEL
-ON CLIENTE.idcliente = ALUGUEL.idcliente
+ON CLIENTE.idCliente = ALUGUEL.idCliente
 LEFT JOIN VEICULO
 ON ALUGUEL.idVeiculo = VEICULO.idVeiculo
 LEFT JOIN MODELO
